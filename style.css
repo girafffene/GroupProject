@@ -75,3 +75,8 @@ body {
   height: 300px;
   width: 300px;
 }
+
+.pictures #insidebar {
+  background-image: url(/assets/group-of-people-gathering-inside-bar-1058277.jpg);
+  display: cover;
+}
