@@ -110,3 +110,32 @@ body {
 .row2 {
   margin-top: 0;
 }
+
+.socialMedia ul {
+  list-style: none;
+}
+
+.FB {
+  color: blue;
+  font-size: 30px;
+}
+
+.TW {
+  color: cornflowerblue;
+  font-size: 30px;
+}
+
+.IG {
+  color: purple;
+  font-size: 30px;
+}
+
+.socialMedia {
+  position: relative;
+  left: 1350px;
+  bottom: 123px;
+}
+
+.logo img {
+  height: 100px;
+}
