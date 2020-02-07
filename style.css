@@ -7,6 +7,12 @@ html {
   box-sizing: inherit;
 }
 
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 body {
   margin: 0;
 }
@@ -74,7 +80,7 @@ body {
 }
 
 .picturesinrest {
-  background-image: url(/assets/group-of-people-gathering-inside-bar-1058277.jpg);
+  background-image: url("./assets/group-of-people-gathering-inside-bar-1058277.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
