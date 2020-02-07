@@ -8,19 +8,20 @@ html {
 }
 
 body {
-  margin: 0;
+  margin: 0px;
+  font-family: "Montserrat", sans-serif;
 }
 
 .container {
   display: flex;
   flex-direction: column;
-  margin: 0;
+  margin: 0px;
 }
 
 .navbar {
   border: 1px solid black;
   height: 100px;
-  margin: 0;
+  margin: 0px;
 }
 
 #pictures {
@@ -53,7 +54,9 @@ body {
   background-color: white;
 }
 
-.menu img {
+.entrees img,
+.appetizers img,
+.desserts img {
   height: 300px;
   width: 360px;
 }
@@ -108,4 +111,116 @@ body {
 
 .logo img {
   height: 100px;
+}
+
+.footer {
+  border: 1px solid black;
+  background-color: black;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.map {
+  position: relative;
+  top: 3px;
+}
+
+.contactUs {
+  margin: 0px;
+  font-size: 15px;
+  text-align: center;
+  color: #eeeeee;
+  width: 300px;
+}
+
+#contact {
+  display: inline-block;
+  margin: 0px;
+  font-family: "Quicksand", sans-serif;
+  color: #d65831;
+  font-size: 20px;
+}
+
+.logoTwo img {
+  width: 400px;
+  height: 400px;
+}
+
+.followUs {
+  margin: 0px;
+  margin-top: 80px;
+  font-size: 15px;
+  text-align: center;
+  color: #eeeeee;
+  width: 200px;
+}
+
+#follow {
+  margin: 0px;
+  font-family: "Quicksand", sans-serif;
+  color: #d65831;
+  font-size: 20px;
+  display: inline-block;
+}
+
+.mediaLink ul {
+  list-style: none;
+}
+
+.linkButtons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 0px;
+}
+
+.fb,
+.tw,
+.ig {
+  color: #eeeeee;
+  font-size: 25px;
+  display: inline-block;
+}
+
+.hours {
+  margin: 0px;
+  font-size: 15px;
+  text-align: center;
+  color: #eeeeee;
+  width: 200px;
+}
+
+#Hours {
+  margin: 0px;
+  font-family: "Quicksand", sans-serif;
+  color: #d65831;
+  font-size: 20px;
+  display: inline-block;
+}
+
+.textarea {
+  width: 410px;
+  height: 200px;
+  position: relative;
+  left: 1px;
+  top: 56px;
+}
+
+.textarea::placeholder {
+  color: #d65831;
+  font-size: large;
+}
+
+.comment {
+  margin: 0px;
+  font-family: "Quicksand", sans-serif;
+  color: #d65831;
+  font-size: 20px;
+  display: inline-block;
+}
+
+.leaveAComment {
+  margin: 0px;
+  font-size: 15px;
+  text-align: center;
+  color: #eeeeee;
 }
