@@ -97,7 +97,7 @@ body {
 
 .row1 img,
 .row2 img {
-  height: 480px;
+  height: 300px;
   width: 480px;
 }
 
@@ -107,8 +107,10 @@ body {
   row-gap: 0;
 }
 
-.row2 {
-  margin-top: 0;
+.row1 > div,
+.row2 > div {
+  margin-bottom: 0;
+  height: 300px;
 }
 
 .socialMedia ul {
