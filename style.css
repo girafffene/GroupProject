@@ -30,8 +30,7 @@ body {
 }
 
 #pictures {
-  width: 720px;
-  height: 400px;
+  width: 100%;
   border: 1px solid black;
   margin: auto;
 }
@@ -39,6 +38,7 @@ body {
 .aboutus {
   height: 300px;
   border: 1px solid black;
+  background-color: #eeeeee;
 }
 
 .menu {
@@ -85,4 +85,28 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
+  height: 600px;
+}
+
+.row1,
+.row2 {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid #d65a31;
+}
+
+.row1 img,
+.row2 img {
+  height: 480px;
+  width: 480px;
+}
+
+.picturesflex {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 0;
+}
+
+.row2 {
+  margin-top: 0;
 }
