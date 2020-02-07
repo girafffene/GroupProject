@@ -7,9 +7,16 @@ html {
   box-sizing: inherit;
 }
 
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 body {
   margin: 0px;
   font-family: "Montserrat", sans-serif;
+  background-image: url(assets/red-flame-digital-wallpaper-1546070.jpg);
 }
 
 .container {
@@ -19,14 +26,15 @@ body {
 }
 
 .navbar {
-  border: 1px solid black;
-  height: 100px;
-  margin: 0px;
+  border: 1px solid #d65a31;
+  height: 78px;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
 }
 
 #pictures {
-  width: 720px;
-  height: 400px;
+  width: 100%;
   border: 1px solid black;
   margin: auto;
 }
@@ -34,6 +42,10 @@ body {
 .aboutus {
   height: 300px;
   border: 1px solid black;
+  background-color: #eeeeee;
+  width: 1000px;
+  margin: auto;
+  border-radius: 15px;
 }
 
 .menu {
@@ -51,7 +63,8 @@ body {
   display: flex;
   flex-direction: row;
   text-align: center;
-  background-color: white;
+  background-color: #393e46;
+  border: 1px solid #d65a31;
 }
 
 .entrees img,
@@ -77,15 +90,46 @@ body {
 }
 
 .picturesinrest {
-  background-image: url(/assets/group-of-people-gathering-inside-bar-1058277.jpg);
+  background-image: url("./assets/group-of-people-gathering-inside-bar-1058277.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
+  height: 600px;
 }
 
-.socialMedia ul {
-  list-style: none;
+.row1,
+.row2 {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid #d65a31;
+}
+
+.row1 img,
+.row2 img {
+  height: 300px;
+  width: 480px;
+}
+
+.picturesflex {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 0;
+}
+
+.row1 > div,
+.row2 > div {
+  margin-bottom: 0;
+  height: 300px;
+}
+
+.socialMedia {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  left: 1220px;
+  padding: 20px;
+  background-color: #eeeeee;
 }
 
 .FB {
@@ -96,21 +140,22 @@ body {
 .TW {
   color: cornflowerblue;
   font-size: 30px;
+  margin-left: 5px;
 }
 
 .IG {
   color: purple;
   font-size: 30px;
-}
-
-.socialMedia {
-  position: relative;
-  left: 1600px;
-  bottom: 123px;
+  margin-left: 5px;
 }
 
 .logo img {
-  height: 100px;
+  height: 75px;
+  width: 100px;
+}
+
+.product {
+  color: #eeeeee;
 }
 
 .footer {
