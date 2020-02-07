@@ -80,3 +80,32 @@ body {
   background-repeat: no-repeat;
   position: relative;
 }
+
+.socialMedia ul {
+  list-style: none;
+}
+
+.FB {
+  color: blue;
+  font-size: 30px;
+}
+
+.TW {
+  color: cornflowerblue;
+  font-size: 30px;
+}
+
+.IG {
+  color: purple;
+  font-size: 30px;
+}
+
+.socialMedia {
+  position: relative;
+  left: 1600px;
+  bottom: 123px;
+}
+
+.logo img {
+  height: 100px;
+}
