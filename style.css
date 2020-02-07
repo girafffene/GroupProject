@@ -15,6 +15,7 @@ body {
 
 body {
   margin: 0;
+  background-image: url(assets/red-flame-digital-wallpaper-1546070.jpg);
 }
 
 .container {
@@ -24,9 +25,11 @@ body {
 }
 
 .navbar {
-  border: 1px solid black;
-  height: 100px;
+  border: 1px solid #d65a31;
+  height: 78px;
   margin: 0;
+  display: flex;
+  flex-direction: row;
 }
 
 #pictures {
@@ -39,6 +42,9 @@ body {
   height: 300px;
   border: 1px solid black;
   background-color: #eeeeee;
+  width: 1000px;
+  margin: auto;
+  border-radius: 15px;
 }
 
 .menu {
@@ -56,7 +62,8 @@ body {
   display: flex;
   flex-direction: row;
   text-align: center;
-  background-color: white;
+  background-color: #393e46;
+  border: 1px solid #d65a31;
 }
 
 .menu img {
@@ -113,8 +120,13 @@ body {
   height: 300px;
 }
 
-.socialMedia ul {
-  list-style: none;
+.socialMedia {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  left: 1220px;
+  padding: 20px;
+  background-color: #eeeeee;
 }
 
 .FB {
@@ -125,19 +137,20 @@ body {
 .TW {
   color: cornflowerblue;
   font-size: 30px;
+  margin-left: 5px;
 }
 
 .IG {
   color: purple;
   font-size: 30px;
-}
-
-.socialMedia {
-  position: relative;
-  left: 1350px;
-  bottom: 123px;
+  margin-left: 5px;
 }
 
 .logo img {
-  height: 100px;
+  height: 75px;
+  width: 100px;
+}
+
+.product {
+  color: #eeeeee;
 }
