@@ -14,9 +14,12 @@ body {
 }
 
 body {
+  width: 1440px;
   margin: 0px;
   font-family: "Montserrat", sans-serif;
   background-image: url(assets/red-flame-digital-wallpaper-1546070.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 .container {
@@ -153,7 +156,7 @@ body {
   height: 75px;
   width: 100px;
 }
-
+.apps,
 .product {
   color: #eeeeee;
 }
@@ -268,4 +271,27 @@ body {
   font-size: 15px;
   text-align: center;
   color: #eeeeee;
+}
+
+.apps {
+  width: 1502px;
+  margin: 0;
+}
+
+.firstline {
+  display: flex;
+  flex-direction: row;
+}
+
+.firstline > p {
+  margin: 0;
+  margin-left: 5px;
+  font-family: "Quicksand", sans-serif;
+  color: #d65a31;
+}
+
+.description {
+  margin: 0;
+  text-align: left;
+  font-size: 12px;
 }

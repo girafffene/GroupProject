@@ -1,26 +1,28 @@
 $(document).ready(function() {
-  $("#tabs").on("click", "a", function() {
-    $(".content").removeClass("show")
-    $(this)
-      .find("+ .content")
-      .addClass("show")
+  $.get("https://obscure-tundra-54269.herokuapp.com/casual-dining", function(
+    data
+  ) {
+    var apps = data.appetizers
+      .map(function(item) {
+        return `
+        <div class="apps">
+          <div class="firstline">
+            <p class="price">$${item.price}</p>
+            <p class="title"> ${item.name}</p>
+            <p class="extra"> ${(item.extra.spicy &&
+              '<i class="fas fa-pepper-hot"></i>') ||
+              ""} 
+            ${(item.extra.glutenfree && '<i class="fas fa-ban"></i>') || ""}
+            ${(item.extra.vegetarian && '<i class="fas fa-seedling"></i>') ||
+              ""} </p>
+</p>
+          </div><br>
+            <p class="description">${item.description}</p>
+        </div>
+        <br> `
+      })
+
+      .join("")
+    $(".apps").html(apps)
   })
 })
-
-const html = items.results
-  .map(function(item) {
-    return `
-    <div class="products">
-      <img src=${item.Images[0].url_fullxfull}>
-      <div class="description">
-        <p class="title">${item.title}</p>
-        <p class= "price">${
-          item.currency_code === "GBP" ? "&pound;" : "$"
-        }${item.price}</p>
-      </div>
-    </div>
-  `
-  })
-  .join("")
-
-document.querySelector("#prodlist").innerHTML = html
