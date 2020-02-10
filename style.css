@@ -197,7 +197,8 @@ a:active {
   flex-direction: row;
   text-align: center;
   background-color: #393e46;
-  border: 2px solid #d65a31;
+  border: 1px solid #d65a31;
+  opacity: 0.9;
 }
 
 .entrees img,
@@ -207,8 +208,8 @@ a:active {
   width: 348px;
 }
 
-.desserts {
-  justify-content: space-between;
+.footer {
+  height: 400px;
 }
 
 .appetizers > div,
@@ -256,8 +257,10 @@ a:active {
   height: 75px;
   width: 100px;
 }
-.apps,
-.product {
+
+.dess,
+.entr,
+.apps {
   color: #eeeeee;
 }
 
@@ -380,7 +383,8 @@ a:active {
   color: #eeeeee;
 }
 
-<<<<<<< HEAD
+.dess,
+.entr,
 .apps {
   width: 1502px;
   margin: 0;
@@ -402,7 +406,8 @@ a:active {
   margin: 0;
   text-align: left;
   font-size: 12px;
-=======
+}
+
 .submitButton {
   position: relative;
   top: 62px;
@@ -414,5 +419,28 @@ a:active {
   width: 66px;
   border: none;
   border-radius: 10px;
->>>>>>> 59fc7ff9084a01cd48907f04cf3e0eb012cd92e7
+}
+
+.entrees img {
+  margin-left: 780px;
+}
+
+.graffiti {
+  background-image: url(assets/architecture-bright-cars-casino-444964.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 600px;
+}
+
+label {
+  color: #d65a31;
+  font-family: "Quicksand", sans-serif;
+  font-size: 40px;
+  border-style: none;
+  background-color: #393e46;
+  width: 320px;
+  border: 1px solid #d65a31;
+  opacity: 0.9;
 }
