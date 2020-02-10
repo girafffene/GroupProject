@@ -26,11 +26,112 @@ body {
 }
 
 .navbar {
-  border: 1px solid #d65a31;
+  border: 2px solid #d65a31;
   height: 78px;
   margin: 0;
   display: flex;
   flex-direction: row;
+}
+
+.aboutButton,
+.galleryButton,
+.menuButton,
+.contactButton,
+.reservations {
+  border-radius: 10px;
+  height: 30px;
+  background-color: #eeeeee;
+  color: #d65a31;
+  padding-top: 5px;
+}
+
+.aboutButton {
+  width: 59px;
+  padding-left: 4px;
+  position: relative;
+  top: 22px;
+  left: 26px;
+}
+
+.galleryButton {
+  width: 66px;
+  padding-left: 5px;
+  position: relative;
+  top: 22px;
+  left: 36px;
+}
+
+.menuButton {
+  width: 53px;
+  padding-left: 3px;
+  position: relative;
+  top: 22px;
+  left: 46px;
+}
+
+.contactButton {
+  width: 100px;
+  padding-left: 5px;
+  position: relative;
+  top: 22px;
+  left: 55px;
+}
+
+.reservations {
+  width: 114px;
+  padding-left: 4px;
+  position: relative;
+  top: 22px;
+  left: 65px;
+}
+
+/* unvisited link */
+a:link {
+  color: #d65a31;
+  text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+  color: #d65a31;
+}
+
+/* selected link */
+a:active {
+  color: #d65a31;
+  text-decoration: none;
+}
+
+.socialMedia {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  left: 1057px;
+  padding: 19px;
+  background-color: #eeeeee;
+}
+
+.FB {
+  color: blue;
+  font-size: 30px;
+}
+
+.TW {
+  color: cornflowerblue;
+  font-size: 30px;
+  margin-left: 5px;
+}
+
+.IG {
+  color: purple;
+  font-size: 30px;
+  margin-left: 5px;
 }
 
 #pictures {
@@ -39,13 +140,42 @@ body {
   margin: auto;
 }
 
+.rsvAndAbout {
+  height: 320px;
+}
+
+.rsvTool {
+  height: 235px;
+  position: relative;
+  top: 45px;
+  left: 52px;
+}
+
 .aboutus {
-  height: 300px;
-  border: 1px solid black;
-  background-color: #eeeeee;
   width: 1000px;
-  margin: auto;
+  height: 300px;
+  border: 2px solid #d65a31;
   border-radius: 15px;
+  background-color: #eeeeee;
+  background-image: url(./assets/fire-transparent.png);
+  margin: auto;
+  padding-left: 15px;
+  position: relative;
+  bottom: 230px;
+}
+
+.about {
+  font-family: "Quicksand", sans-serif;
+  color: #d65a31;
+}
+
+.aboutPara {
+  position: relative;
+  bottom: 30px;
+}
+
+.withLove {
+  color: #d65831;
 }
 
 .menu {
@@ -64,22 +194,18 @@ body {
   flex-direction: row;
   text-align: center;
   background-color: #393e46;
-  border: 1px solid #d65a31;
+  border: 2px solid #d65a31;
 }
 
 .entrees img,
 .appetizers img,
 .desserts img {
-  height: 300px;
-  width: 360px;
+  height: 296px;
+  width: 348px;
 }
 
 .desserts {
   justify-content: space-between;
-}
-
-.footer {
-  height: 400px;
 }
 
 .appetizers > div,
@@ -102,7 +228,7 @@ body {
 .row2 {
   display: flex;
   flex-direction: row;
-  border: 1px solid #d65a31;
+  border: 2px solid #d65a31;
 }
 
 .row1 img,
@@ -123,32 +249,6 @@ body {
   height: 300px;
 }
 
-.socialMedia {
-  display: flex;
-  flex-direction: row;
-  position: relative;
-  left: 1220px;
-  padding: 20px;
-  background-color: #eeeeee;
-}
-
-.FB {
-  color: blue;
-  font-size: 30px;
-}
-
-.TW {
-  color: cornflowerblue;
-  font-size: 30px;
-  margin-left: 5px;
-}
-
-.IG {
-  color: purple;
-  font-size: 30px;
-  margin-left: 5px;
-}
-
 .logo img {
   height: 75px;
   width: 100px;
@@ -159,7 +259,8 @@ body {
 }
 
 .footer {
-  border: 1px solid black;
+  height: 400px;
+  border: 2px solid #d65831;
   background-color: black;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -188,7 +289,7 @@ body {
 
 .logoTwo img {
   width: 400px;
-  height: 400px;
+  height: 396px;
 }
 
 .followUs {
@@ -274,4 +375,17 @@ body {
   font-size: 15px;
   text-align: center;
   color: #eeeeee;
+}
+
+.submitButton {
+  position: relative;
+  top: 62px;
+  left: 172px;
+  color: white;
+  font-size: 14px;
+  background-color: #d65831;
+  height: 34px;
+  width: 66px;
+  border: none;
+  border-radius: 10px;
 }

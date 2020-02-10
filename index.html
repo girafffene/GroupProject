@@ -22,6 +22,31 @@
     <div class="container">
       <div class="navbar">
         <div class="logo"><img src="assets/logo.png" /></div>
+
+        <div class="aboutButton">
+          <a href="#about">About</a>
+        </div>
+
+        <div class="galleryButton">
+          <a href="#gallery">Gallery</a>
+        </div>
+
+        <div class="menuButton">
+          <a href="#menu">Menu</a>
+        </div>
+
+        <div class="contactButton">
+          <a href="#contact">Contact Us</a>
+        </div>
+
+        <div class="reservations">
+          <a
+            class="OT_ExtLink"
+            href="http://www.opentable.com/single.aspx?rid=412810&restref=412810"
+            >Reservations</a
+          >
+        </div>
+
         <div class="socialMedia">
           <div class="FB">
             <i class="fab fa-facebook-square"></i>
@@ -35,12 +60,45 @@
         </div>
       </div>
       <div class="picturesinrest" id="pictures"></div>
-      <div class="aboutus">
-        <h1>About Us</h1>
-        <br />
-        <p>We opened this restaurant because Punchcode told us to.</p>
+
+      <div class="rsvAndAbout">
+        <div rsvTool>
+          <img
+            class="rsvTool"
+            src="assets/openTable.png"
+            class="OT_ExtLink"
+            href="http://www.opentable.com/single.aspx?rid=412810&restref=412810"
+          />
+        </div>
+
+        <div class="aboutus">
+          <h1 id="about" class="about">About Us</h1>
+          <br />
+          <p class="aboutPara">
+            Cutstistic is the realization of our dream! We are Norbert and
+            Irene, two young locals who have been close friends for over nine
+            years! Along the way we developed a mutual passion for casual
+            restaurants and decided to embark on our new adventure to serve up a
+            little something of our own.
+          </p>
+          <p class="aboutPara">
+            We are happy to have you here at Cutstistic! Hope you enjoy not only
+            the food and drinks, but also find a little time to relax, sit back
+            with some good company and enjoy the atmosphere of our little
+            refuge.
+          </p>
+
+          <p class="aboutPara">
+            Thank you, very much, for visiting Cutstistic.
+          </p>
+          <p class="aboutPara">
+            with love, Nor-Rene.
+            <span class="withLove"><i class="fas fa-heart"></i></span>
+          </p>
+        </div>
       </div>
-      <div class="picturesflex" id="pictures">
+
+      <div id="gallery" class="picturesflex" id="pictures">
         <div class="row1">
           <div>
             <img src="assets/alcohol-alcoholic-bar-beverage-4784.jpg" />
@@ -56,7 +114,7 @@
           <div><img src="assets/steak-meat-raw-herbs-65175.jpg" /></div>
         </div>
       </div>
-      <div class="menu">
+      <div id="menu" class="menu">
         <div class="appetizers">
           <img src="assets/appetizer-assorted-bowl-cheese-302457.jpg" />
           <div class="product">
@@ -206,13 +264,15 @@
                 cols="100"
                 placeholder="comment here..."
               ></textarea>
-              <input>
-                <button type="button">Submit</button>
-              </input>
             </form>
+            <button class="submitButton" type="button">Submit</button>
           </div>
         </footer>
       </div>
     </div>
+    <script
+      type="text/javascript"
+      src="//www.opentable.com/widget/reservation/loader?rid=412810&type=standard&theme=standard&iframe=true&domain=com&lang=en-US&newtab=false&ot_source=Restaurant%20website"
+    ></script>
   </body>
 </html>
